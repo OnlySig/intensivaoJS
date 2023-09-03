@@ -13,8 +13,8 @@ const catalogo = [
 
 catalogo.forEach(element => {
     mostraProduto.innerHTML += `
-    <div class="border-solid border-2 border-sky-500 w-48 my-2" id="card-produto-${element.id}">
-        <img class="w-28" src="./assets/img/${element.imagem}" alt="Produto 1 do IntensivaoJS">
+    <div class="border-solid border-2 border-sky-500 w-48 m-2" id="card-produto-${element.id}">
+        <img class="" src="./assets/img/${element.imagem}" alt="Produto 1 do IntensivaoJS">
         <p class="marca">${element.marca}</p>
         <p>${element.nome}</p>
         <p>$${element.preco}</p>
