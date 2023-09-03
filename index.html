@@ -8,20 +8,19 @@
   <title>IntensivaoJS</title>
 </head>
 <body class="bg-stone-200 flex flex-col">
-  <section id="carrinho" class="fixed right-[-360px] top-0 bg-slate-950 h-screen w-[360px] text-slate-200 z-50">
+
+  <section id="carrinho" class="fixed right-[-360px] top-0 bg-slate-950 h-screen w-[360px] text-slate-200 z-50 duration-200 border-l border-slate-200 p-5 flex flex-col justify-between">
     <div id="cabecalho-carrinho" class="flex justify-between m-4">
       <p>Meu carrinho</p>
-      <button><i id="fechar-carrinho" class="fa-solid fa-circle-xmark"></i></button>
+      <button id="fechar-carrinho"><i class="fa-solid fa-circle-xmark"></i></button>
     </div>
     <section id="produtos-carrinho">
-      <p>Camasa Larga com Bolsos</p>
-      <p>Casaco Reto com Lã</p>
-      <p>Jaqueta com Efeito Camurça</p>
     </section>
     <p id="preco-total">$200</p>
     <button class="bg-slate-200 text-slate-900 p-1">Finalizar Compra</button>
   </section>
-  <header class="flex justify-between items-end bg-slate-950 px-8 py-4 top-0 sticky shadow-slate-400 shadow-xl text-xl">
+
+  <header class="flex justify-between items-end bg-slate-950 px-8 py-4 top-0 sticky shadow-slate-400 shadow-xl text-xl z-10">
     <img class="h-16" src="./assets/logo/hashtag.svg" alt="logo do site dahora">
     <div class="container__button text-slate-200 flex gap-4 mx-2">
       <button><i class="fa-solid fa-user"></i></button>
@@ -33,6 +32,6 @@
     </section>
   </main>
   <script src="/main.js" type="module"></script>
-  <script src="./src/menuCarrinho.js"></script>
+  <script src="./src/menuCarrinho.js" type="module"></script>
 </body>
 </html>
